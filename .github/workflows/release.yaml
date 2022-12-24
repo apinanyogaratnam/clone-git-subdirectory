@@ -34,7 +34,23 @@ jobs:
     name: "Release"
     runs-on: "ubuntu-latest"
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: install make
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y make
+      - name: install cargo
+        run: curl https://sh.rustup.rs -sSf | sh
+      - name: build
+        run: make build
+      - name: rename build executable to cgs
+        run: |
+          cd target/release
+          mv clone-git-subdirectory cgs
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
+          files: |
+            target/release/cgs
