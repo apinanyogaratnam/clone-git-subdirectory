@@ -15,17 +15,17 @@ Download the cli tool
 
 linux:
 ```sh
-(cd ~ && curl https://github.com/apinanyogaratnam/clone-git-subdirectory/releases/download/v0.0.12/cgs --output cgs && chmod +x ./cgs && echo "alias cgs='~/cgs'" >> ~/.zshrc)
+(cd ~ && curl https://github.com/apinanyogaratnam/clone-git-subdirectory/releases/download/v0.0.10/cgs --output cgs && chmod +x ./cgs && echo "alias cgs='~/cgs'" >> ~/.zshrc)
 ```
 
 mac:
 ```sh
-(cd ~ && curl https://github.com/apinanyogaratnam/clone-git-subdirectory/releases/download/v0.0.12/cgs-mac --output cgs && chmod +x ./cgs && echo "alias cgs='~/cgs'" >> ~/.zshrc)
+(cd ~ && curl https://github.com/apinanyogaratnam/clone-git-subdirectory/releases/download/v0.0.10/cgs-mac --output cgs && chmod +x ./cgs && echo "alias cgs='~/cgs'" >> ~/.zshrc)
 ```
 
 windows:
 ```sh
-(cd ~ && curl https://github.com/apinanyogaratnam/clone-git-subdirectory/releases/download/v0.0.12/cgs-windows --output cgs && chmod +x ./cgs && echo "alias cgs='~/cgs'" >> ~/.zshrc)
+(cd ~ && curl https://github.com/apinanyogaratnam/clone-git-subdirectory/releases/download/v0.0.10/cgs-windows --output cgs && chmod +x ./cgs && echo "alias cgs='~/cgs'" >> ~/.zshrc)
 ```
 
 ## Usage
