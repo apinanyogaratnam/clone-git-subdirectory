@@ -42,15 +42,31 @@ jobs:
           sudo apt-get install -y make
       - name: install cargo
         run: curl https://sh.rustup.rs -y -sSf | sh
+      - name: install targets
+        run: |
+          rustup target add x86_64-pc-windows-gnu # building on linux for windows
+          rustup target add x86_64-apple-darwin # building on linux for Mac OS X
       - name: build
-        run: make build
+        run: |
+          cargo build --release
+          cd target/release
+          mv clone-git-subdirectory cgs
+          cd ../..
+          cargo build --release --target=x86_64-pc-windows-gnu
+          cd target/release
+          mv clone-git-subdirectory cgs-windows
+          cd ../..
+          cargo build --release --target=x86_64-apple-darwin
+          cd target/release
+          mv clone-git-subdirectory cgs-mac
       - name: rename build executable to cgs
         run: |
           cd target/release
           mv clone-git-subdirectory cgs
-      - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
           files: |
             target/release/cgs
+            target/release/cgs-mac
+            target/release/cgs-windows
