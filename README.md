@@ -1,6 +1,6 @@
 # Clone Git Subdirectory
 
-A cli tool built using rust to clone git subdirectories
+A cli tool built using rust to clone git subdirectories.
 
 ## Table of Contents
 
