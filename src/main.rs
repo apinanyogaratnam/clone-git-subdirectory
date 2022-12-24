@@ -54,9 +54,11 @@ fn main() {
     let mut move_command = "mv ".to_owned();
     move_command += &subdirectory;
     move_command += &" .";
+    println!("{}", move_command);
 
     let mut remove_original_directory_command = "rm -rf ".to_owned();
     remove_original_directory_command += &username_and_repo;
+    println!("{}", remove_original_directory_command);
 
     command = command[..29+index_of_subdirectory].to_string();
 
