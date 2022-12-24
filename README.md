@@ -14,7 +14,7 @@ A cli tool built using rust to clone git subdirectories
 Download the cli tool
 
 ```sh
-(cd ~ && curl https://github.com/apinanyogaratnam/clone-git-subdirectory/releases/download/v0.0.9/cgs --output cgs && echo "alias cgs='~/cgs'" >> ~/.zshrc)
+(cd ~ && curl https://github.com/apinanyogaratnam/clone-git-subdirectory/releases/download/v0.0.10/cgs --output cgs && chmod +x ./cgs && echo "alias cgs='~/cgs'" >> ~/.zshrc)
 ```
 
 ## Usage
