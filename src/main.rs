@@ -60,6 +60,8 @@ fn main() {
 
     command = command[..29+index_of_subdirectory].to_string();
 
+    println!("cloning...");
+
     execute_command(&command); // clone the repository
     execute_command(&checkout_branch_command); // checkout the branch
     execute_command(&move_command); // move the subdirectory to the current directory
