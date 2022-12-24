@@ -43,7 +43,7 @@ fn main() {
     // change_directory_command += &subdirectory;
     // println!("{}", change_directory_command);
 
-    let number_of_changes = subdirectory.matches("/").count() + 1;
+    // let number_of_changes = subdirectory.matches("/").count() + 1;
 
     // let mut change_back_directory_command = "cd ".to_owned();
     // for _ in 0..number_of_changes {
