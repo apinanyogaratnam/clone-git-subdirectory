@@ -52,6 +52,8 @@ fn main() {
     // println!("{}", change_back_directory_command);
 
     let mut move_command = "mv ".to_owned();
+    move_command += &username_and_repo;
+    move_command += "/";
     move_command += &subdirectory;
     move_command += &" .";
     println!("{}", move_command);
@@ -64,8 +66,8 @@ fn main() {
 
     println!("cloning...");
 
-    execute_command(&command); // clone the repository
-    execute_command(&checkout_branch_command); // checkout the branch
-    execute_command(&move_command); // move the subdirectory to the current directory
-    execute_command(&remove_original_directory_command); // remove the original directory
+    // execute_command(&command); // clone the repository
+    // execute_command(&checkout_branch_command); // checkout the branch
+    // execute_command(&move_command); // move the subdirectory to the current directory
+    // execute_command(&remove_original_directory_command); // remove the original directory
 }
