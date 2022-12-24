@@ -66,8 +66,8 @@ fn main() {
 
     println!("cloning...");
 
-    // execute_command(&command); // clone the repository
-    // execute_command(&checkout_branch_command); // checkout the branch
-    // execute_command(&move_command); // move the subdirectory to the current directory
-    // execute_command(&remove_original_directory_command); // remove the original directory
+    execute_command(&command); // clone the repository
+    execute_command(&checkout_branch_command); // checkout the branch
+    execute_command(&move_command); // move the subdirectory to the current directory
+    execute_command(&remove_original_directory_command); // remove the original directory
 }
