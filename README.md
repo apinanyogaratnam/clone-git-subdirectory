@@ -15,7 +15,7 @@ Download the cli tool
 
 ```sh
 cd ~ && ./curl https://github.com/apinanyogaratnam/clone-git-subdirectory/releases/download/v0.0.2/cgs --output cgs
-echo "alias cgs="~/cgs"
+echo "alias cgs='~/cgs'"
 ```
 
 ## Usage
