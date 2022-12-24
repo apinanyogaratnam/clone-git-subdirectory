@@ -66,11 +66,4 @@ fn main() {
     execute_command(&checkout_branch_command); // checkout the branch
     execute_command(&move_command); // move the subdirectory to the current directory
     execute_command(&remove_original_directory_command); // remove the original directory
-
-
-    // // Change `ls` to execute in the root directory.
-    // list_dir.current_dir("/");
-
-    // // And then execute `ls` again but in the root directory.
-    // list_dir.status().expect("process failed to execute");
 }
