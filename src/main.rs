@@ -15,6 +15,7 @@ fn main() {
 
     if args.len() != 2 {
         println!("{}", "Usage: {cgs <git_subdirectory>}");
+        return;
     }
 
     let query = &args[1];
