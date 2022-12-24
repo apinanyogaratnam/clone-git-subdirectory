@@ -3,7 +3,7 @@ VERSION := 0.1.0
 .PHONY: build
 
 run:
-	cargo run https://github.com/apinanyogaratnam/base-python-template/tree/main/.github/workflows
+	cargo run https://github.com/apinanyogaratnam/opensea-wrapper/tree/master/example
 
 build:
 	cargo build --release
