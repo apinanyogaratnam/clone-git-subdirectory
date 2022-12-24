@@ -54,3 +54,4 @@ jobs:
           prerelease: false
           files: |
             target/release/cgs
+            binaries/cgs-macos
