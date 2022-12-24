@@ -48,7 +48,6 @@ jobs:
         run: |
           cd target/release
           mv clone-git-subdirectory cgs
-          chmod +x ./cgs
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
