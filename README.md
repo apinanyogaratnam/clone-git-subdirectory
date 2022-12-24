@@ -30,4 +30,4 @@ Please [open an issue](https://github.com/apinanyogaratnam/clone-git-subdirector
 
 ## Contributing
 
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/apinanyogaratnam/clone-git-subdirectory/).
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/apinanyogaratnam/clone-git-subdirectory/compare).
